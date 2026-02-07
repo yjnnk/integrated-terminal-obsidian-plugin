@@ -1,9 +1,9 @@
 {
   "id": "open-ghostty-here",
-  "name": "Open Ghostty Here",
+  "name": "Integrated Terminal",
   "version": "0.1.0",
   "minAppVersion": "1.0.0",
-  "description": "Open Ghostty in the active file's folder.",
+  "description": "Open an integrated terminal pane rooted at the active note folder.",
   "author": "yuji",
   "authorUrl": "",
   "isDesktopOnly": true

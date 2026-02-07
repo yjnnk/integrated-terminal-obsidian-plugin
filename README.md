@@ -1,14 +1,38 @@
-# Open Ghostty Here (Obsidian Plugin)
+# Integrated Terminal (Obsidian Plugin)
 
-Adds a command to open Ghostty with the working directory set to the active file's folder (or vault root if no file is active).
+Adds a VS Code-like integrated terminal pane to Obsidian.
 
-## Install (dev)
+## Features
 
-1. `npm install`
-2. `npm run build`
-3. Copy `main.js`, `manifest.json`, and `styles.css` into your vault's `.obsidian/plugins/open-ghostty-here/` folder.
+- Command: `Open Integrated Terminal`
+- Command: `Open Integrated Terminal Here (Restart)`
+- Starts shell in active file folder, or vault root when no file is active
+- In-pane controls: `Restart Here`, `Clear`
 
-## Usage
+## Build
 
-Open the command palette (`cmd+p`) and run **Open Ghostty Here**.
-# ghostty-obsidian-plugin
+```bash
+npm install
+npm run build
+```
+
+## Install in your vault
+
+Create exactly this folder (must match manifest id):
+
+`<your-vault>/.obsidian/plugins/open-ghostty-here/`
+
+Place these inside:
+
+- `main.js`
+- `manifest.json`
+- `styles.css`
+- `node_modules/@homebridge/node-pty-prebuilt-multiarch/`
+
+Do not install into a different folder name (for example `obs_plugin_terminal`) unless you also mirror the same files under `open-ghostty-here`.
+
+## Notes
+
+- Desktop Obsidian only.
+- Shell path defaults to `SHELL` env var, fallback `/bin/zsh`.
+- This plugin needs the PTY dependency at runtime (folder above).

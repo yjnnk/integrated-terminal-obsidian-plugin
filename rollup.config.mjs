@@ -11,7 +11,15 @@ export default {
     format: "cjs",
     sourcemap: "inline"
   },
-  external: ["obsidian", "electron", "child_process", "fs", "path"],
+  external: [
+    "obsidian",
+    "electron",
+    "fs",
+    "module",
+    "path",
+    "node-pty",
+    "@homebridge/node-pty-prebuilt-multiarch"
+  ],
   plugins: [
     nodeResolve({ browser: true }),
     commonjs(),
