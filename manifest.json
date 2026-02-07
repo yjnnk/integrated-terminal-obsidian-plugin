@@ -1,0 +1,10 @@
+{
+  "id": "open-ghostty-here",
+  "name": "Open Ghostty Here",
+  "version": "0.1.0",
+  "minAppVersion": "1.0.0",
+  "description": "Open Ghostty in the active file's folder.",
+  "author": "yuji",
+  "authorUrl": "",
+  "isDesktopOnly": true
+}
